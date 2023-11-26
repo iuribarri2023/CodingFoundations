@@ -10,8 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Mono&family=Work+Sans:wght@300&display=swap" rel="stylesheet"    />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+    
     <title>CodePen</title>
   </head>
   <body>
@@ -26,12 +28,12 @@
       </div>
       <nav class="nav-bar">
         <div class="nav-wrapper">
-          <div class="nav-golden">EXPLORE</div>
+          <div class="nav-golden"><a href="#">EXPLORE</a></div>
           <div class="nav-wrapper-menu">
-            <div class="link-white"><a href="#"> Pens</a></div>
-            <div class="link-white"><a href="#"> Projects</a></div>
-            <div class="link-white"><a href="#"> Posts</a></div>
-            <div class="link-white"><a href="#"> Collections</a></div>
+            <div class="link-white"><a href="#">Pens</a></div>
+            <div class="link-white"><a href="#">Projects</a></div>
+            <div class="link-white"><a href="#">Posts</a></div>
+            <div class="link-white"><a href="#">Collections</a></div>
             <div class="link-grey">
               <a href="#">Spark</a>
               <a href="#"><span class="btn-arrow"></span></a
@@ -45,7 +47,9 @@
             <a href="#">Create</a>
             <a href="#" class="btn-arrow-green"></a>
           </button>
-          <button class="btn-grey" id="btn-search"></button>
+          <button class="btn-grey" id="btn-search">
+            <a href="#"><i class="fa-solid fa-magnifying-glass fa-xl" style="color: #787878;"></i></a>
+          </button>
           <button class="btn-grey" id="btn-login">
             <a href="#">Log In</a>
           </button>
@@ -59,8 +63,9 @@
         <div class="central-table">
             <div class="text-space">
               <div class="central-text">
-                Codepen is a <strong>social development environment</strong> for
-                front-end designers and developers.
+                <span>Codepen is a </span>
+                <span class="central-text-strong">social development environment</span>
+                <span>for front-end designers and developers.👋</span> 
               </div>
               <div class="central-text-below">
                 It's the best place to build and deploy a website, show off your work,
@@ -76,9 +81,11 @@
               </div>
             </div>
             <div class="img-space">
-              <span class="img-title">This is</span>
+              <div class="img-title-container">
+                <span class="img-title">This is</span>
               <span class="img-title-blue">Codepen Projects</span>
-              <span class="img-title">!?</span>
+              <span class="img-title">!</span>
+              </div>
               <img class="img" src="/src/image-1.png" alt="NO IMAGE" />
               <div></div>
             </div>
@@ -109,4 +116,5 @@
     
     
   </body>
+  <script src="https://kit.fontawesome.com/17a1c41cae.js" crossorigin="anonymous"></script>
 </html>
