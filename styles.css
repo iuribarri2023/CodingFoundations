@@ -1,0 +1,277 @@
+
+:root{
+    --head-height:5rem;
+    --logo-height:2.5rem;
+    --logo-width:18rem;
+    --central-height:70vh;
+    --text-width:55vw;
+    --img-width:42vw;
+    --btn-height:4rem;
+    --footer-height:8vh;
+    --color-black:rgba(0,0,0,255);
+    --color-greylight:rgba(54,56,63,255);
+    --color-greydark:rgba(10,10,12,255);
+    --color-green: rgba(75,206,121,255);
+    --color-golden:rgba(179,167,94,255);
+    --color-white: rgb(255,255,255);
+    --font-Roboto: "Roboto",'Courier New', Courier, monospace;
+    --font-WorkSans: 'Work Sans',sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.site-header{
+    position: absolute;
+    height:5rem;
+    width: 100vw;
+    background-color: var(--color-black);
+}
+.logo-container{
+    position: relative;
+    display: inline-block;
+    height: var(--head-height);
+    width: var(--logo-width);
+    text-align: center;
+    vertical-align: middle;
+}
+.logo-container>#logo{
+    display: inline-block;
+    height: var(--logo-height);
+    transform:translate(0%,50%) ;
+}
+.nav-bar{
+    position: relative;
+    display:inline-block;
+    vertical-align: middle;
+}
+.nav-bar>.nav-wrapper{
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 5rem;
+    width: 35vw;
+}
+.nav-bar>.nav-wrapper>.nav-golden{
+    position: relative;
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-weight: 600;
+    color: rgba(179,167,94,255);
+    font-family: "Roboto",'Courier New', Courier, monospace;
+}
+.nav-bar>.nav-wrapper>.nav-wrapper-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
+    justify-content: space-between;
+}
+.nav-bar>.nav-wrapper>.nav-wrapper-menu> .link-white a{
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 1000;
+}
+.nav-bar>.nav-wrapper>.nav-wrapper-menu> .link-grey,.link-grey a{
+    width: 5rem;
+    color: grey;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: 1000;
+}
+.btn-arrow{
+    display: inline-block;
+    margin-left: 0.5rem; 
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-left: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+.btns{
+    position: relative;
+    display:inline-block;
+    height: var(--head-height);
+    vertical-align: middle;
+    align-items: center;
+    width: 30vw;
+    left: 5rem;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.btn-search,.btn-grey{
+    height: 3.5rem;
+    color: white;
+    background-color: rgba(54,56,63,255);
+    margin: 0px 0.5rem 0px 0.5rem;
+    border: none;
+    border-radius: 0.2rem;
+}
+.btn-grey> a{
+    color: white;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: 0px 1rem 0px 1rem;
+}
+.btn-arrow-green{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-left: 2px solid green;
+    border-bottom: 2px solid green;
+    margin-right: 1rem;
+}
+.central{
+    position: relative;
+    display: block;
+    top: var(--head-height);
+    background-image: linear-gradient(to top left,var(--color-greydark),var(--color-greylight));
+    width: 100vw;
+    height: 100vh;
+}
+.central-table{
+    display: flex;
+    flex-wrap: wrap;
+    height: var(--central-height);
+    width: 100vw;
+    margin-top: 2rem;
+ 
+}
+.central-table>.text-space{
+    width: var(--text-width);
+    height: var(--central-height);
+}
+.central-table>.text-space>.central-text{
+    display: inline-block;
+    margin: 1rem 3rem 1rem 3rem;
+    width:var(--central-width);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 45px;
+}
+.central-table>.text-space>.central-text-below{
+    display: inline-block;
+    margin: 1rem 3rem 1rem 3rem;
+    width: var(--central-width);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 35px;
+}
+.text-btns-wrapper{
+    display: flex;
+    justify-content:start;
+    height: 4rem;
+    margin: 1rem 3rem 1rem 3rem;
+    width: calc(var(--text-width) - 15rem);
+}
+.text-btn{
+    height: var(--btn-height);
+    text-align: center;
+    align-content: center;
+    border-radius: 0.5rem;
+    padding: 0px 1rem 0px 1rem;
+    
+}
+.text-btn a{
+    font-family: 'Work Space', sans-serif;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+#btn-green{
+    display: inline-block;
+    background-color: var(--color-green);
+    color: black;
+    height: var(--btn-height);
+    font-family: 'Work Space', sans-serif;
+    color: var(--color-green);
+    
+}
+#btn-green a{
+    color: black;
+    
+}
+#btn-black{
+    display: inline-block;
+    background-color: var(--color-black);
+    color: black;
+    height: var(--btn-height);
+    font-family: 'Work Space', sans-serif;
+    color: white;
+    margin-left: 2rem;
+}
+#btn-black a{
+    color: white;
+}
+
+.central-table>.img-space{
+    position:relative;
+    display: inline-block;
+    width: var(--img-width);
+    height: var(--central-height);
+    margin: 0.5rem;
+    overflow: hidden;
+}
+.img-space>.img-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Work Sans';
+}
+.img-space>.img-title-blue{
+    color: aqua;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700,
+}
+.img{
+    position: relative;
+    display: inline-block;
+    height: var(--central-height);
+    width: var(--img-width);
+    object-fit: cover;
+}
+.footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: var(--footer-height);
+    width: 100vw;
+    background-color: var(--color-greylight);
+    text-align: center;
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+}
+.footer-text{
+    color: var(--color-white);
+    text-decoration: none;
+    font-family: var(--font-WorkSans);
+    font-size: 1.5rem;
+}
+.footer-text-bold{
+    color: var(--color-white);
+    font-family: 'Work Sans';
+    font-size: 2rem;
+    font-weight: 1000;
+    font-style: bold;
+}
